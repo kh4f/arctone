@@ -11,16 +11,8 @@
 	"homepage": "https://github.com/kh4f/glaucus#readme",
 	"keywords": ["glaucus", "glaucus-theme", "vscode-theme"],
 	"categories": ["Themes"],
-	"icon": "icon.png",
 	"galleryBanner": { "color": "#FFFFFF", "theme": "light" },
 	"engines": { "vscode": ">=1.100.0" },
-	"files": ["package.json", "LICENSE", "README.md", "CHANGELOG.md", "icon.png"],
-	"type": "module",
-	"contributes": {
-		"themes": [{
-			"label": "Glaucus",
-			"uiTheme": "vs-dark",
-			"path": "color-theme.json"
-		}]
-	}
+	"files": ["package.json", "LICENSE", "README.md", "CHANGELOG.md"],
+	"contributes": { "themes": [{ "label": "Glaucus", "uiTheme": "vs-dark", "path": "theme.json" }] }
 }
