@@ -16,6 +16,12 @@
 	"files": ["package.json", "LICENSE", "README.md", "CHANGELOG.md"],
 	"contributes": { "themes": [{ "label": "Glaucus", "uiTheme": "vs-dark", "path": "theme.json" }] },
 	"devDependencies": {
-		"typescript": "^5.9.3"
+		"@eslint/js": "^10.0.1",
+		"@stylistic/eslint-plugin": "^5.10.0",
+		"@types/bun": "^1.3.11",
+		"eslint": "^10.1.0",
+		"jiti": "^2.6.1",
+		"typescript": "^5.9.3",
+		"typescript-eslint": "^8.57.2"
 	}
 }
