@@ -14,7 +14,13 @@
 	"galleryBanner": { "color": "#FFFFFF", "theme": "light" },
 	"engines": { "vscode": ">=1.100.0" },
 	"files": ["package.json", "LICENSE", "README.md", "CHANGELOG.md"],
-	"contributes": { "themes": [{ "label": "Voitone", "uiTheme": "vs-dark", "path": "theme.json" }] },
+	"contributes": { "themes": [
+		{
+			"label": "Voitone Twilight",
+			"uiTheme": "vs-dark",
+			"path": "themes/twilight.json"
+		}
+	] },
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
 		"@stylistic/eslint-plugin": "^5.10.0",
