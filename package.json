@@ -14,5 +14,8 @@
 	"galleryBanner": { "color": "#FFFFFF", "theme": "light" },
 	"engines": { "vscode": ">=1.100.0" },
 	"files": ["package.json", "LICENSE", "README.md", "CHANGELOG.md"],
-	"contributes": { "themes": [{ "label": "Glaucus", "uiTheme": "vs-dark", "path": "theme.json" }] }
+	"contributes": { "themes": [{ "label": "Glaucus", "uiTheme": "vs-dark", "path": "theme.json" }] },
+	"devDependencies": {
+		"typescript": "^5.9.3"
+	}
 }
