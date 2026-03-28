@@ -31,6 +31,6 @@
 		"typescript-eslint": "^8.57.2"
 	},
 	"scripts": {
-		"build": "bun --watch scripts/build.ts"
+		"sync": "bun src/sync.ts"
 	}
 }
