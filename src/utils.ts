@@ -24,5 +24,7 @@ export const applyVar = (content: string, name: string, val: string) => content.
 
 export const now = () => {
 	const d = new Date()
-	return `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}.${d.getMilliseconds()}`
+	const pad = (n: number, len = 2) => String(n).padStart(len, '0')
+
+	return `${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}.${pad(d.getMilliseconds(), 3)}`
 }
