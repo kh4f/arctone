@@ -1,5 +1,5 @@
 import { watch } from 'node:fs'
-import { now, unmarshalCss, updateTheme, type Palette } from '@/utils'
+import { now, unmarshalCss, applyPaletteToTheme, type Palette } from '@/utils'
 
 const palettePath = 'src/palette.css'
 let prevPalette: Palette = {}
@@ -14,7 +14,7 @@ async function syncThemePalette(force = false) {
 	for (const theme in palette) {
 		if (force || isPaletteChanged(theme, palette)) {
 			console.log(`[${now()}] updating ${theme}`)
-			void updateTheme(theme, palette[theme])
+			void applyPaletteToTheme(theme, palette[theme])
 		}
 	}
 

@@ -10,7 +10,7 @@ export const unmarshalCss = (css: string): Palette =>
 		]),
 	)
 
-export const updateTheme = async (name: string, vars: Record<string, string>) => {
+export const applyPaletteToTheme = async (name: string, vars: Record<string, string>) => {
 	const path = `themes/${name}.json`
 	let content = await Bun.file(path).text()
 	Object.entries(vars).forEach(([name, val]) => content = applyVar(content, name, val))
