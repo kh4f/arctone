@@ -12,15 +12,20 @@ export const unmarshalCss = (css: string): Palette =>
 
 export const applyPaletteToTheme = async (name: string, vars: Record<string, string>) => {
 	const path = `themes/${name}.json`
-	let content = await Bun.file(path).text()
-	Object.entries(vars).forEach(([name, val]) => content = applyVar(content, name, val))
-	await Bun.write(path, content)
+	const content = await Bun.file(path).text()
+	let next = content
+	Object.entries(vars).forEach(([name, val]) => next = applyVar(next, name, val))
+	if (content === next) return
+	await Bun.write(path, next)
+	log(`${path} updated`)
 }
 
 export const applyVar = (content: string, name: string, val: string) => content.replaceAll(
 	new RegExp(`(?<="#)(.{6})(.{2})?(?=",?//${name})`, 'g'),
 	(_m, _rgb, alpha = '') => val.length > 6 ? val : `${val}${alpha}`,
 )
+
+export const log = (...args: unknown[]) => console.log(`[${now()}]`, ...args)
 
 export const now = () => {
 	const d = new Date()
