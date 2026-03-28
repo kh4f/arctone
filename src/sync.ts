@@ -1,5 +1,5 @@
 import { watch } from 'node:fs'
-import { now, unmarshalCss, updateTheme, type Palette } from './utils'
+import { now, unmarshalCss, updateTheme, type Palette } from '@/utils'
 
 const palettePath = 'src/palette.css'
 let prevPalette: Palette = {}
