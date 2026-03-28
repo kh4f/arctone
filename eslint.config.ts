@@ -15,6 +15,7 @@ export default defineConfig([
 		files: ['**/*.ts'],
 		extends: [tseslint.configs.strictTypeChecked, tseslint.configs.stylisticTypeChecked],
 		languageOptions: { parserOptions: { projectService: true, tsconfigRootDir: import.meta.dirname } },
+		rules: { '@typescript-eslint/restrict-template-expressions': 'off' },
 	},
 	{
 		name: 'Stylistic Rules',
