@@ -16,9 +16,9 @@
 	"files": ["package.json", "LICENSE", "README.md", "CHANGELOG.md"],
 	"contributes": { "themes": [
 		{
-			"label": "Voitone Ocean",
+			"label": "Voitone Arctic",
 			"uiTheme": "vs-dark",
-			"path": "themes/ocean.json"
+			"path": "themes/arctic.json"
 		}
 	] },
 	"devDependencies": {
