@@ -45,7 +45,7 @@
 		"checkbox.selectBorder": "#ffffff10",//3
 		"dropdown.background": "#1c1c29",
 		"dropdown.border": "#ffffff10",//3
-		"input.background": "#1c2033",//2
+		"input.background": "#1d2131",//2
 		"input.border": "#ffffff10",//3
 		"input.foreground": "#ffffff",
 		"input.placeholderForeground": "#ffffff60",
@@ -83,7 +83,7 @@
 		"activityBarBadge.foreground": "#00ffea",//1
 		"activityBar.activeBorder": "#00ffea",//1
 		"activityBarTop.foreground": "#00ffea",//1
-		"sideBar.background": "#1c2033",//2
+		"sideBar.background": "#1d2131",//2
 		"sideBar.foreground": "#c4cbe0",
 		"sideBar.border": "#ffffff10",//3
 		"sideBarTitle.foreground": "#b4b4b4",
@@ -91,16 +91,16 @@
 		"sideBarSectionHeader.border": "#ffffff10",//3
 		"sideBarActivityBarTop.border": "#00000000",
 		"sideBarTitle.border": "#00000000",
-		"sideBarStickyScroll.background": "#1c2033",//2
+		"sideBarStickyScroll.background": "#1d2131",//2
 		"sideBarStickyScroll.border": "#ffffff04",
 		"sideBarStickyScroll.shadow": "#ffffff04",
 		"editorGroup.border": "#ffffff10",//3
 		"editorGroup.dropBackground": "#ffffff10",//3
-		"editorGroupHeader.noTabsBackground": "#1c2033",//2
+		"editorGroupHeader.noTabsBackground": "#1d2131",//2
 		"editorGroupHeader.tabsBackground": "#00000000",
 		"editorGroup.focusedEmptyBorder": "#00ffea",//1
 		"editorGroup.dropIntoPromptBackground": "#1c1c29",
-		"tab.activeBackground": "#1c2033",//2
+		"tab.activeBackground": "#1d2131",//2
 		"tab.activeForeground": "#ffffff",
 		"tab.border": "#00000000",
 		"tab.activeBorder": "#00000000",
@@ -118,7 +118,7 @@
 		"tab.inactiveModifiedBorder": "#904348",
 		"tab.unfocusedActiveModifiedBorder": "#c05a60",
 		"tab.unfocusedInactiveModifiedBorder": "#904348",
-		"editor.background": "#1c2033",//2
+		"editor.background": "#1d2131",//2
 		"editor.foreground": "#eeffff",
 		"editorLineNumber.foreground": "#39363d",
 		"editorLineNumber.activeForeground": "#4c4a50",
@@ -172,7 +172,7 @@
 		"editorHoverWidget.foreground": "#E0E0E0",
 		"editorHoverWidget.background": "#1c1c29",
 		"editorHoverWidget.border": "#ffffff10",//3
-		"editorStickyScroll.background": "#1c2033",//2
+		"editorStickyScroll.background": "#1d2131",//2
 		"editorMarkerNavigation.background": "#eeffff05",
 		"peekView.border": "#00000030",
 		"peekViewEditor.background": "#2b2b2b",
@@ -183,7 +183,7 @@
 		"peekViewResult.selectionBackground": "#84848470",
 		"peekViewTitle.background": "#2b2b2b",
 		"peekViewTitleDescription.foreground": "#eeffff60",
-		"panel.background": "#1c2033",//2
+		"panel.background": "#1d2131",//2
 		"panel.border": "#ffffff10",//3
 		"panel.dropBorder": "#00ffea",//1
 		"panelTitle.activeBorder": "#00ffea",//1
@@ -194,21 +194,21 @@
 		"panelSection.border": "#ffffff10",//3
 		"panelSectionHeader.background": "#ffffff00",
 		"panelSectionHeader.foreground": "#00ffea",//1
-		"statusBar.background": "#1c2033",//2
+		"statusBar.background": "#1d2131",//2
 		"statusBar.foreground": "#5c5c5c",
 		"statusBar.border": "#ffffff10",//3
-		"statusBar.debuggingBackground": "#1c2033",//2
+		"statusBar.debuggingBackground": "#1d2131",//2
 		"statusBar.debuggingForeground": "#00ffea",//1
-		"statusBar.noFolderBackground": "#1c2033",//2
+		"statusBar.noFolderBackground": "#1d2131",//2
 		"statusBarItem.activeBackground": "#00ffea80",//1
 		"statusBarItem.hoverForeground": "#00ffea",//1
 		"statusBarItem.hoverBackground": "#282738",
 		"statusBarItem.remoteBackground": "#00000000",
 		"statusBarItem.remoteForeground": "#5c5c5c",
 		"statusBar.focusBorder": "#ffffff10",//3
-		"titleBar.activeBackground": "#1c2033",//2
+		"titleBar.activeBackground": "#1d2131",//2
 		"titleBar.activeForeground": "#ffffffc0",
-		"titleBar.inactiveBackground": "#1c2033",//2
+		"titleBar.inactiveBackground": "#1d2131",//2
 		"titleBar.inactiveForeground": "#848484",
 		"menubar.selectionForeground": "#00ffea",//1
 		"menubar.selectionBackground": "#00000030",
@@ -242,7 +242,7 @@
 		"terminal.ansiBrightRed": "#00ffea",//1
 		"terminal.ansiBrightWhite": "#ffffff",
 		"terminal.ansiBrightYellow": "#ffcb6b",
-		"terminal.ansiCyan": "#1c2033",//2
+		"terminal.ansiCyan": "#1d2131",//2
 		"terminal.ansiGreen": "#00ffea",//1
 		"terminal.ansiMagenta": "#000000",
 		"terminal.ansiRed": "#00ffea",//1
