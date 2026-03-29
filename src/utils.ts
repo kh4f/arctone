@@ -21,7 +21,7 @@ export const applyPaletteToTheme = async (name: string, vars: Record<string, str
 }
 
 export const applyVar = (content: string, name: string, val: string) => {
-	if (val.length < 6) return content
+	if (val.length !== 6 && val.length !== 8) return content
 	return content.replaceAll(
 		new RegExp(`(?<="#)(.{6})(.{2})?(?=",?//${name})`, 'g'),
 		(_m, _rgb, alpha = '') => val.length > 6 ? val : `${val}${alpha}`,
