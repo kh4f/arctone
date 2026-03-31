@@ -40,7 +40,7 @@
 		"textLink.activeForeground": "#00ffea",//accent
 		"textLink.foreground": "#23ccff",
 		"textPreformat.foreground": "#23deff",
-		"textPreformat.background": "#282738",
+		"textPreformat.background": "#25293c",//btn-bg
 		// "textPreformat.border": "#ff0000",
 		"textSeparator.foreground": "#ff0000",
 
@@ -56,21 +56,21 @@
 
 		// Button control
 		// A set of colors for button widgets such as Open Folder button in the Explorer of a new window.
-		"button.background": "#282738",
+		"button.background": "#25293c",//btn-bg
 		"button.foreground": "#00ffea",//accent
 		// "button.border": "#ff0000",
 		"button.separator": "#ffffff18",
-		"button.hoverBackground": "#2e2b3f",
+		"button.hoverBackground": "#292e42",//btn-hover
 		"button.secondaryForeground": "#00ffea",//accent
-		"button.secondaryBackground": "#282738",
-		"button.secondaryHoverBackground": "#2e2b3f",
+		"button.secondaryBackground": "#25293c",//btn-bg
+		"button.secondaryHoverBackground": "#292e42",//btn-hover
 		// "button.secondaryBorder": "#ff0000",
 		// "checkbox.background": "#ff0000",
 		"checkbox.foreground": "#00ffea",//accent
 		"checkbox.disabled.background": "#16161f",
 		"checkbox.disabled.foreground": "#00756c",
 		"checkbox.border": "#ffffff0b",//border
-		"checkbox.selectBackground": "#2e2b3f",
+		"checkbox.selectBackground": "#292e42",//btn-hover
 		"checkbox.selectBorder": "#ffffff0b",//border
 		// "radio.activeForeground": "#ff0000",
 		// "radio.activeBackground": "#ff0000",
@@ -117,7 +117,7 @@
 		// Badge
 		// Badges are small information labels, for example, search results count.
 		"badge.foreground": "#00ffea",//accent
-		"badge.background": "#282738",
+		"badge.background": "#25293c",//btn-bg
 
 		// Progress bar
 		"progressBar.background": "#00ffea",//accent
@@ -164,7 +164,7 @@
 		"activityBar.foreground": "#ffffff",
 		// "activityBar.inactiveForeground": "#ff0000",
 		"activityBar.border": "#44444460",
-		"activityBarBadge.background": "#282738",
+		"activityBarBadge.background": "#25293c",//btn-bg
 		"activityBarBadge.foreground": "#00ffea",//accent
 		"activityBar.activeBorder": "#00ffea",//accent
 		// "activityBar.activeBackground": "#ff0000",
@@ -504,7 +504,7 @@
 		// "chat.linesAddedForeground": "#ff0000",
 		// "chat.linesRemovedForeground": "#ff0000",
 		// "chat.requestCodeBorder": "#ff0000",
-		"chat.requestBubbleBackground": "#282738ee",
+		"chat.requestBubbleBackground": "#25293cee",//btn-bg
 		// "chat.requestBubbleHoverBackground": "#ff0000",
 		// "chat.checkpointSeparator": "#ff0000",
 		// "chat.thinkingShimmer": "#ff0000",
@@ -622,7 +622,7 @@
 		"panelTitle.activeForeground": "#ffffff",
 		"panelTitle.inactiveForeground": "#686868",
 		// "panelTitle.border": "#ff0000",
-		"panelTitleBadge.background": "#282738",
+		"panelTitleBadge.background": "#25293c",//btn-bg
 		"panelTitleBadge.foreground": "#00ffea",//accent
 		// "panelInput.border": "#ff0000",
 		"panelSection.border": "#ffffff0b",//border
@@ -649,7 +649,7 @@
 		// "statusBar.noFolderBorder": "#ff0000",
 		"statusBarItem.activeBackground": "#00ffea80",//accent
 		"statusBarItem.hoverForeground": "#00ffea",//accent
-		"statusBarItem.hoverBackground": "#282738",
+		"statusBarItem.hoverBackground": "#25293c",//btn-bg
 		// "statusBarItem.prominentForeground": "#ff0000",
 		// "statusBarItem.prominentBackground": "#ff0000",
 		// "statusBarItem.prominentHoverForeground": "#ff0000",
@@ -689,7 +689,7 @@
 		"menu.foreground": "#eeffff",
 		"menu.background": "#1a1d27",//menu
 		"menu.selectionForeground": "#00ffea",//accent
-		"menu.selectionBackground": "#282738",
+		"menu.selectionBackground": "#25293c",//btn-bg
 		// "menu.selectionBorder": "#ff0000",
 		"menu.separatorBackground": "#ffffff0b",//border
 		"menu.border": "#ffffff0b",//border
