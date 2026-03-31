@@ -1,5 +1,5 @@
 import { describe, it, test, expect } from 'bun:test'
-import { applyVar, unmarshalCss } from '@/utils'
+import { applyVar, unmarshalCss } from '@/sync'
 
 test('unmarshalCss', () => {
 	expect(unmarshalCss(`

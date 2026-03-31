@@ -1,6 +1,8 @@
 import { watch } from 'node:fs'
 import { parse } from 'node:path'
-import { unmarshalCss, applyPaletteToTheme, type Palette } from '@/utils'
+import { log } from '@/utils'
+
+type Palette = Record<string, Record<string, string>>
 
 const palettePath = 'src/palette.css'
 const themesDir = 'themes'
@@ -34,4 +36,32 @@ async function syncThemePalette(theme?: 'all' | (string & {})) {
 
 const isPaletteChanged = (theme: string, palette: Palette) => {
 	return JSON.stringify(prevPalette[theme]) !== JSON.stringify(palette[theme])
+}
+
+export const unmarshalCss = (css: string): Palette =>
+	Object.fromEntries([...css.matchAll(/\.(.*?) \{([\s\S]*?)\}/g)]
+		.map(m => [
+			m[1],
+			Object.fromEntries([...m[2].matchAll(/--(.*?): #(.*?);/g)]
+				.map(m => ([m[1], m[2]])),
+			),
+		]),
+	)
+
+const applyPaletteToTheme = async (name: string, vars: Record<string, string>) => {
+	const path = `themes/${name}.json`
+	const content = await Bun.file(path).text()
+	let next = content
+	Object.entries(vars).forEach(([name, val]) => next = applyVar(next, name, val))
+	if (content === next) return
+	await Bun.write(path, next)
+	log(`${path} updated`)
+}
+
+export const applyVar = (content: string, name: string, val: string) => {
+	if (val.length !== 6 && val.length !== 8) return content
+	return content.replaceAll(
+		new RegExp(`(?<="#)(.{6})(.{2})?(?=",?//${name})`, 'g'),
+		(_m, _rgb, alpha = '') => val.length > 6 ? val : `${val}${alpha}`,
+	)
 }
