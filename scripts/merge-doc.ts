@@ -1,6 +1,6 @@
 import { JSDOM } from 'jsdom'
 
-void mergeThemeWithDoc('themes/arctic.json')
+void mergeThemeWithDoc('themes/arctone.json')
 
 async function mergeThemeWithDoc(themePath: string) {
 	const documentedColors = await parseDocColorTokens()

@@ -1,24 +1,24 @@
 {
-	"name": "voitone",
-	"displayName": "Voitone",
+	"name": "arctone",
+	"displayName": "Arctone",
 	"version": "0.0.0",
-	"description": "🌌 Seamless VS Code Theme",
+	"description": "❄️ Polar Night VS Code Theme",
 	"author": "kh4f <kh4f.dev@gmail.com>",
 	"publisher": "kh4f",
 	"license": "MIT",
-	"repository": "https://github.com/kh4f/voitone",
-	"bugs": "https://github.com/kh4f/voitone/issues",
-	"homepage": "https://github.com/kh4f/voitone#readme",
-	"keywords": ["voitone", "voitone-theme", "vscode-theme"],
+	"repository": "https://github.com/kh4f/arctone",
+	"bugs": "https://github.com/kh4f/arctone/issues",
+	"homepage": "https://github.com/kh4f/arctone#readme",
+	"keywords": ["arctone", "arctone-theme", "vscode-theme"],
 	"categories": ["Themes"],
 	"galleryBanner": { "color": "#FFFFFF", "theme": "light" },
 	"engines": { "vscode": ">=1.100.0" },
 	"files": ["package.json", "LICENSE", "README.md", "CHANGELOG.md"],
 	"contributes": { "themes": [
 		{
-			"label": "Voitone Arctic",
+			"label": "Arctone",
 			"uiTheme": "vs-dark",
-			"path": "themes/arctic.json"
+			"path": "themes/arctone.json"
 		}
 	] },
 	"devDependencies": {
