@@ -13,7 +13,7 @@
 	"categories": ["Themes"],
 	"galleryBanner": { "color": "#FFFFFF", "theme": "light" },
 	"engines": { "vscode": ">=1.100.0" },
-	"files": ["package.json", "LICENSE", "README.md", "CHANGELOG.md"],
+	"files": ["package.json", "LICENSE", "README.md", "CHANGELOG.md", "themes"],
 	"contributes": { "themes": [
 		{
 			"label": "Arctone",
