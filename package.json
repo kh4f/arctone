@@ -25,6 +25,7 @@
 		"@eslint/js": "^10.0.1",
 		"@stylistic/eslint-plugin": "^5.10.0",
 		"@types/bun": "^1.3.11",
+		"@vscode/vsce": "^3.7.1",
 		"eslint": "^10.1.0",
 		"jiti": "^2.6.1",
 		"linkedom": "^0.18.12",
@@ -32,6 +33,7 @@
 		"typescript-eslint": "^8.57.2"
 	},
 	"scripts": {
-		"sync": "bun src/sync.ts"
+		"sync": "bun src/sync.ts",
+		"package": "vsce package"
 	}
 }
