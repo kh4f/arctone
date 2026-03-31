@@ -1,0 +1,48 @@
+name: Release
+
+on: { push: { tags: "v[0-9]+.[0-9]+.[0-9]+*" } }
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # for creating a GitHub release
+    env:
+      TAG: ${{ github.ref_name }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with: { ref: "main" } # attach HEAD to 'main'
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Set env variables
+        run: |
+          PACKAGE=${GITHUB_REPOSITORY#*/}
+          VERSION=${TAG#v}
+          ZIP=$PACKAGE-$TAG.zip
+          VSIX=$PACKAGE-$VERSION.vsix
+          echo -e "PACKAGE=$PACKAGE\nVERSION=$VERSION\nZIP=$ZIP\nVSIX=$VSIX" >> $GITHUB_ENV
+
+      - name: Install deps
+        run: bun i
+
+      - name: Create VSIX
+        run: bun package
+
+      - name: Create ZIP
+        run: zip -r $ZIP package.json LICENSE README.md CHANGELOG.md themes
+
+      - name: Publish to VS Marketplace
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: bun vsce publish --packagePath $VSIX
+
+      - name: Create GitHub release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release create $TAG --title $TAG --draft $ZIP $VSIX
