@@ -1,6 +1,5 @@
 import { lstat, mkdir, readlink, rm, symlink } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
-import { log } from '@/utils'
 
 interface Manifest {
 	name: string
@@ -21,9 +20,9 @@ async function installLocal() {
 	const linkPath = resolve(extDir, extId)
 	const targetPath = repoRoot
 
-	log(`target: ${targetPath}`)
-	log(`link: ${linkPath}`)
-	log(`command: mklink /D "${linkPath}" "${targetPath}"`)
+	console.log(`target: ${targetPath}`)
+	console.log(`link: ${linkPath}`)
+	console.log(`command: mklink /D "${linkPath}" "${targetPath}"`)
 
 	if (isDryRun) return
 
@@ -38,14 +37,14 @@ async function installLocal() {
 		const curTarget = await readlink(linkPath)
 		const curTargetPath = resolve(dirname(linkPath), curTarget)
 		if (curTargetPath === targetPath) {
-			log('local theme link is already installed')
+			console.log('local theme link is already installed')
 			return
 		}
 
 		await rm(linkPath, { recursive: true, force: true })
-		log(`removed previous symlink: ${linkPath}`)
+		console.log(`removed previous symlink: ${linkPath}`)
 	}
 
 	await symlink(targetPath, linkPath, 'dir')
-	log('local theme link installed')
+	console.log('local theme link installed')
 }
