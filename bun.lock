@@ -12,6 +12,7 @@
         "eslint": "^10.1.0",
         "jiti": "^2.6.1",
         "linkedom": "^0.18.12",
+        "relion": "^0.44.3",
         "typescript": "^5.9.3",
         "typescript-eslint": "^8.57.2",
       },
@@ -597,6 +598,8 @@
     "read-pkg": ["read-pkg@9.0.1", "", { "dependencies": { "@types/normalize-package-data": "^2.4.3", "normalize-package-data": "^6.0.0", "parse-json": "^8.0.0", "type-fest": "^4.6.0", "unicorn-magic": "^0.1.0" } }, "sha512-9viLL4/n1BJUCT1NXVTdS1jtm80yDEgR5T4yCelII49Mbj0v1rZdKqj7zCiYdbB0CuCgdrvHcNogAKTFPBocFA=="],
 
     "readable-stream": ["readable-stream@3.6.2", "", { "dependencies": { "inherits": "^2.0.3", "string_decoder": "^1.1.1", "util-deprecate": "^1.0.1" } }, "sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA=="],
+
+    "relion": ["relion@0.44.3", "", { "dependencies": { "semver": "^7.7.4" }, "bin": { "relion": "dist/cli.js" } }, "sha512-5LqRZ2vetsLQFn+YvMmzaR5ErOoxkgbeChGaDQjPxEH3v23e2pFa+EvppaXMNLRduRX9RskF8E6PzM9gXZ5lDQ=="],
 
     "require-from-string": ["require-from-string@2.0.2", "", {}, "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw=="],
 
