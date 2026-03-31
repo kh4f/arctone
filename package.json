@@ -15,11 +15,7 @@
 	"engines": { "vscode": ">=1.100.0" },
 	"files": ["package.json", "LICENSE", "README.md", "CHANGELOG.md", "themes"],
 	"contributes": { "themes": [
-		{
-			"label": "Arctone",
-			"uiTheme": "vs-dark",
-			"path": "themes/arctone.json"
-		}
+		{ "label": "Arctone", "uiTheme": "vs-dark", "path": "themes/arctone.json" }
 	] },
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
