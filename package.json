@@ -31,7 +31,7 @@
 		"jiti": "^2.6.1",
 		"linkedom": "^0.18.12",
 		"relion": "^0.44.3",
-		"typescript": "^5.9.3",
+		"typescript": "^6.0.2",
 		"typescript-eslint": "^8.57.2"
 	}
 }
