@@ -17,6 +17,11 @@
 	"contributes": { "themes": [
 		{ "label": "Arctone", "uiTheme": "vs-dark", "path": "themes/arctone.json" }
 	] },
+	"scripts": {
+		"sync": "bun src/sync.ts",
+		"package": "vsce package",
+		"release": "relion"
+	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
 		"@stylistic/eslint-plugin": "^5.10.0",
@@ -28,10 +33,5 @@
 		"relion": "^0.44.3",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.57.2"
-	},
-	"scripts": {
-		"sync": "bun src/sync.ts",
-		"package": "vsce package",
-		"release": "relion"
 	}
 }
